@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="K L's Wholesale Enterprise - Retail and Wholesale Beverage Distribution in Grenada.">
+  <title>K L's Wholesale Enterprise | Bigger Stock • Better Prices</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="topbar">🚚 Wholesale beverage supply across Grenada • Orders welcome</div>
+
+  <header class="navbar">
+    <a href="#home" class="logo">
+      <span class="logo-mark">KL</span>
+      <span>K L's <b>Wholesale</b></span>
+    </a>
+    <button class="menu-toggle" aria-label="Open menu">☰</button>
+    <nav id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#wholesale">Wholesale</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#order" class="nav-cta">Order Now</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content reveal">
+        <p class="eyebrow">GRENADA'S BEVERAGE SUPPLIER</p>
+        <h1>Bigger Stock.<br><span>Better Prices.</span></h1>
+        <p class="hero-text">Reliable retail and wholesale beverage supply for shops, bars, restaurants, food vendors, events and everyday customers.</p>
+        <div class="hero-buttons">
+          <a href="#products" class="btn btn-primary">Shop Products</a>
+          <a href="#order" class="btn btn-outline">Place an Order</a>
+        </div>
+        <div class="trust-row">
+          <div><strong>Wholesale</strong><small>Case quantities</small></div>
+          <div><strong>Competitive</strong><small>Pricing</small></div>
+          <div><strong>Reliable</strong><small>Service</small></div>
+        </div>
+      </div>
+      <div class="hero-art reveal">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="bottle bottle-back"><span>KL</span></div>
+        <div class="bottle bottle-main"><span>KL</span></div>
+        <div class="case-box"><span>WHOLESALE</span><b>KL'S</b></div>
+      </div>
+    </section>
+
+    <section id="products" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">OUR SELECTION</p>
+        <h2>Popular <span>Products</span></h2>
+        <p>Order by the case or ask us about individual quantities where available.</p>
+      </div>
+
+      <div class="filters reveal">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="water">Water & Juice</button>
+        <button class="filter" data-filter="malt">Malt & Energy</button>
+        <button class="filter" data-filter="beer">Beer</button>
+        <button class="filter" data-filter="kids">Kids</button>
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section id="wholesale" class="wholesale-section">
+      <div class="section-heading light reveal">
+        <p class="eyebrow">BUILT FOR BUSINESS</p>
+        <h2>Need <span>larger quantities?</span></h2>
+        <p>We focus on dependable stock and competitive pricing for customers who regularly purchase beverages in larger quantities.</p>
+      </div>
+      <div class="benefits">
+        <div class="benefit reveal"><div class="icon">📦</div><h3>Case Orders</h3><p>Purchase popular beverages in larger quantities for your business or event.</p></div>
+        <div class="benefit reveal"><div class="icon">💰</div><h3>Competitive Prices</h3><p>We aim to keep prices competitive while carefully managing operating costs.</p></div>
+        <div class="benefit reveal"><div class="icon">🤝</div><h3>Reliable Service</h3><p>Build a dependable relationship with a supplier that understands your needs.</p></div>
+        <div class="benefit reveal"><div class="icon">🚚</div><h3>Delivery Options</h3><p>Delivery can be arranged for selected customers as the business develops.</p></div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="about-card reveal">
+        <p class="eyebrow">ABOUT K L'S</p>
+        <h2>Your local beverage supply partner.</h2>
+        <p>K L's Wholesale Enterprise is a start-up retail and wholesale beverage business in Grenada. We focus on popular beverages, competitive prices, convenient ordering and strong customer relationships.</p>
+        <p>We are starting small, carefully managing inventory and prioritizing products with strong demand so the business can grow sustainably.</p>
+        <a href="#order" class="text-link">Start an order →</a>
+      </div>
+      <div class="stats reveal">
+        <div><strong>01</strong><span>Shop & business supply</span></div>
+        <div><strong>02</strong><span>Fast-moving inventory</span></div>
+        <div><strong>03</strong><span>Customer-focused service</span></div>
+      </div>
+    </section>
+
+    <section id="order" class="section order-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">ORDER ONLINE</p>
+        <h2>Build Your <span>Order</span></h2>
+        <p>Add products, enter your details, then send the order directly to WhatsApp.</p>
+      </div>
+
+      <div class="order-layout">
+        <form id="orderForm" class="order-form reveal">
+          <div class="form-grid">
+            <label>Full Name<input id="customerName" required placeholder="Your name"></label>
+            <label>Phone Number<input id="customerPhone" required placeholder="+1 473 ..."></label>
+          </div>
+          <label>Order Type
+            <select id="orderType">
+              <option>Wholesale / Business</option>
+              <option>Retail / Individual</option>
+              <option>Event / Large Order</option>
+            </select>
+          </label>
+          <label>Delivery / Pickup
+            <select id="fulfillment">
+              <option>Pickup</option>
+              <option>Delivery — confirm availability</option>
+            </select>
+          </label>
+          <label>Notes<textarea id="orderNotes" rows="4" placeholder="Special requests, preferred delivery area, etc."></textarea></label>
+          <button class="btn btn-whatsapp" type="submit">💬 Send Order on WhatsApp</button>
+          <p class="form-note">Prices and availability can be confirmed before your order is finalized.</p>
+        </form>
+
+        <aside class="cart reveal">
+          <div class="cart-head"><h3>Your Order</h3><span id="cartCount">0 items</span></div>
+          <div id="cartItems" class="cart-items"><div class="empty-cart">Your order is empty.<br>Add products above.</div></div>
+          <div class="cart-total"><span>Estimated Total</span><strong id="cartTotal">EC$0.00</strong></div>
+          <button class="clear-btn" id="clearCart">Clear order</button>
+        </aside>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="contact-inner reveal">
+        <div>
+          <p class="eyebrow">LET'S DO BUSINESS</p>
+          <h2>Ready to place an order?</h2>
+          <p>Contact K L's Wholesale Enterprise for available stock, pricing and ordering information.</p>
+        </div>
+        <a class="btn btn-light" id="contactWhatsapp" href="#">WhatsApp Us →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-main">
+      <div class="logo"><span class="logo-mark">KL</span><span>K L's <b>Wholesale</b></span></div>
+      <p>Retail and Wholesale Beverage Distribution<br>Grenada</p>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> K L's Wholesale Enterprise</span><span>Bigger Stock • Better Prices • Built for Business</span></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
